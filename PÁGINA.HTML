@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JEACEL | Intelligence & Rendering</title>
+    <title>NEBULON | by JEACEL</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@100;400&family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
     
@@ -22,6 +22,7 @@
                         surfaceBorder: '#1A1A1A',
                         accent: '#EAEAEA',
                         cyanGlow: '#00F0FF',
+                        purpleGlow: '#8B5CF6',
                     },
                     backgroundImage: {
                         'grid-pattern': "linear-gradient(to right, #1f1f1f 1px, transparent 1px), linear-gradient(to bottom, #1f1f1f 1px, transparent 1px)",
@@ -31,13 +32,11 @@
         }
     </script>
     <style>
-        /* Custom scrollbar para toque premium */
         ::-webkit-scrollbar { width: 8px; }
         ::-webkit-scrollbar-track { background: #030303; }
         ::-webkit-scrollbar-thumb { background: #1A1A1A; border-radius: 4px; }
         ::-webkit-scrollbar-thumb:hover { background: #333; }
         
-        /* Animación suave de entrada */
         .fade-in-up { animation: fadeInUp 1s cubic-bezier(0.16, 1, 0.3, 1) forwards; opacity: 0; transform: translateY(20px); }
         .delay-100 { animation-delay: 100ms; }
         .delay-200 { animation-delay: 200ms; }
@@ -51,93 +50,101 @@
     <header class="fixed w-full top-0 z-50 border-b border-surfaceBorder bg-base/60 backdrop-blur-xl">
         <div class="max-w-[90rem] mx-auto px-6 lg:px-12 py-5 flex justify-between items-center">
             <div class="flex items-center gap-3">
-                <div class="w-2 h-2 bg-cyanGlow rounded-full animate-pulse"></div>
-                <h1 class="text-xl font-display font-bold text-accent tracking-widest uppercase">Jeacel</h1>
+                <div class="w-2 h-2 bg-purpleGlow rounded-full animate-pulse"></div>
+                <h1 class="text-xl font-display font-bold text-accent tracking-widest uppercase">Jeacel Lab</h1>
             </div>
             <nav class="hidden md:flex space-x-12 text-xs font-mono uppercase tracking-widest text-gray-500">
-                <a href="#vision" class="hover:text-accent transition-colors">Visión</a>
-                <a href="#ecosistema" class="hover:text-accent transition-colors">Ecosistema</a>
-                <a href="#contacto" class="hover:text-accent transition-colors">Contacto</a>
+                <a href="#vision" class="hover:text-accent transition-colors">Núcleo</a>
+                <a href="#specs" class="hover:text-accent transition-colors">Especificaciones</a>
+                <a href="#acceso" class="hover:text-accent transition-colors">Acceso Beta</a>
             </nav>
-            <a href="#contacto" class="hidden md:inline-flex items-center justify-center border border-surfaceBorder hover:border-accent text-accent px-6 py-2.5 rounded-none text-xs font-mono uppercase tracking-wider transition-all hover:bg-accent hover:text-base">
-                Inicializar
+            <a href="#acceso" class="hidden md:inline-flex items-center justify-center border border-surfaceBorder hover:border-accent text-accent px-6 py-2.5 rounded-none text-xs font-mono uppercase tracking-wider transition-all hover:bg-accent hover:text-base">
+                Solicitar Acceso
             </a>
         </div>
     </header>
 
-    <section id="vision" class="relative pt-40 pb-32 md:pt-56 md:pb-40 px-6 lg:px-12 max-w-[90rem] mx-auto z-10">
-        <div class="max-w-5xl">
-            <p class="font-mono text-xs text-cyanGlow mb-6 tracking-[0.2em] uppercase fade-in-up">Sistema Central v2.0 // Lab de Inteligencia</p>
-            <h2 class="text-5xl md:text-8xl font-display font-bold text-accent leading-[1.1] tracking-tight mb-8 fade-in-up delay-100">
-                Lógica abstracta.<br/>
-                <span class="text-gray-600">Realidad renderizada.</span>
+    <section id="vision" class="relative pt-40 pb-32 md:pt-56 md:pb-40 px-6 lg:px-12 max-w-[90rem] mx-auto z-10 flex flex-col items-center text-center">
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-purpleGlow/10 blur-[100px] rounded-full pointer-events-none"></div>
+        
+        <div class="max-w-4xl relative z-10">
+            <div class="inline-flex items-center gap-2 px-3 py-1 bg-surface border border-surfaceBorder rounded-full mb-8 fade-in-up">
+                <span class="w-1.5 h-1.5 rounded-full bg-cyanGlow animate-pulse"></span>
+                <span class="font-mono text-xs text-gray-400 uppercase tracking-wider">En fase de desarrollo</span>
+            </div>
+            
+            <h2 class="text-6xl md:text-9xl font-display font-bold text-accent leading-[1] tracking-tighter mb-6 fade-in-up delay-100">
+                NEBULON
             </h2>
-            <p class="text-lg md:text-xl font-light text-gray-500 max-w-2xl mb-12 fade-in-up delay-200">
-                Diseñamos infraestructuras de inteligencia artificial y síntesis visual. Desde motores conversacionales de alto rendimiento hasta entornos de fidelidad cinematográfica.
+            <p class="text-xl md:text-2xl font-light text-gray-400 max-w-2xl mx-auto mb-12 fade-in-up delay-200">
+                El próximo estándar en inteligencia conversacional. <br/><span class="text-gray-600">No es solo un chat, es una entidad cognitiva.</span>
             </p>
-            <div class="flex flex-col sm:flex-row gap-6 fade-in-up delay-200">
-                <a href="#contacto" class="bg-accent text-base font-medium font-mono text-sm uppercase tracking-wider py-4 px-8 hover:bg-white transition-colors flex items-center justify-between group">
-                    <span>Desplegar Proyecto</span>
+            <div class="flex flex-col sm:flex-row gap-6 justify-center fade-in-up delay-200">
+                <a href="#specs" class="bg-transparent border border-surfaceBorder text-accent font-mono text-sm py-4 px-8 uppercase tracking-wider hover:border-gray-500 transition-colors">
+                    Ver Arquitectura
+                </a>
+                <a href="#acceso" class="bg-accent text-base font-medium font-mono text-sm uppercase tracking-wider py-4 px-8 hover:bg-cyanGlow hover:text-base transition-colors flex items-center justify-center group">
+                    <span>Lista de Espera</span>
                     <svg class="w-4 h-4 ml-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
                 </a>
             </div>
         </div>
     </section>
 
-    <section id="ecosistema" class="py-24 px-6 lg:px-12 max-w-[90rem] mx-auto z-10 relative">
+    <section id="specs" class="py-24 px-6 lg:px-12 max-w-[90rem] mx-auto z-10 relative">
         <div class="flex items-center justify-between mb-16 border-b border-surfaceBorder pb-6">
-            <h3 class="text-3xl font-display text-accent">Infraestructura & Proyectos</h3>
-            <span class="font-mono text-xs text-gray-600">01 // ECOSISTEMA</span>
+            <h3 class="text-3xl font-display text-accent">Características Principales</h3>
+            <span class="font-mono text-xs text-gray-600">01 // SPECS</span>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
             
-            <div class="md:col-span-2 bg-surface border border-surfaceBorder p-8 md:p-12 hover:border-gray-700 transition-colors group flex flex-col justify-between min-h-[400px]">
+            <div class="md:col-span-2 bg-surface border border-surfaceBorder p-8 md:p-12 hover:border-gray-700 transition-colors group flex flex-col justify-between min-h-[350px]">
                 <div class="flex justify-between items-start mb-12">
-                    <span class="font-mono text-xs px-3 py-1 bg-base border border-surfaceBorder rounded-full text-gray-400">FINTECH / IA</span>
-                    <div class="w-10 h-10 rounded-full bg-base border border-surfaceBorder flex items-center justify-center group-hover:bg-accent group-hover:text-base transition-all">
-                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7 17L17 7M17 7H7M17 7V17"></path></svg>
+                    <span class="font-mono text-xs px-3 py-1 bg-base border border-surfaceBorder rounded-full text-cyanGlow">v. CORE</span>
+                    <div class="w-10 h-10 rounded-full bg-base border border-surfaceBorder flex items-center justify-center group-hover:bg-cyanGlow group-hover:text-base transition-all">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 002-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
                     </div>
                 </div>
                 <div>
-                    <h4 class="text-4xl font-display text-accent mb-4">SOLAR</h4>
+                    <h4 class="text-3xl font-display text-accent mb-4">Memoria Contextual Persistente</h4>
                     <p class="text-gray-500 font-light leading-relaxed max-w-xl">
-                        Ecosistema de gestión financiera de próxima generación. Integración de pasarelas de pago, análisis predictivo de datos y arquitectura escalable basada en Supabase.
+                        Nebulon no olvida. Diseñado con una base de datos vectorial avanzada que permite recordar interacciones pasadas, preferencias y contexto histórico para mantener conversaciones fluidas a largo plazo sin perder el hilo.
                     </p>
                 </div>
             </div>
 
-            <div class="bg-surface border border-surfaceBorder p-8 hover:border-gray-700 transition-colors group flex flex-col justify-between min-h-[400px]">
+            <div class="bg-surface border border-surfaceBorder p-8 hover:border-gray-700 transition-colors group flex flex-col justify-between min-h-[350px]">
                 <div class="flex justify-between items-start mb-12">
-                    <span class="font-mono text-xs px-3 py-1 bg-base border border-surfaceBorder rounded-full text-gray-400">NLP / CHAT</span>
+                    <span class="font-mono text-xs px-3 py-1 bg-base border border-surfaceBorder rounded-full text-gray-400">NLP / NLU</span>
                 </div>
                 <div>
-                    <h4 class="text-2xl font-display text-accent mb-3">NEBULON</h4>
+                    <h4 class="text-xl font-display text-accent mb-3">Procesamiento Natural</h4>
                     <p class="text-gray-500 font-light text-sm leading-relaxed">
-                        Interfaz de inteligencia conversacional avanzada. Diseñada con capacidades de memoria contextual y procesamiento de lenguaje natural en tiempo real.
+                        Comprensión profunda de la intención del usuario. Analiza el tono, la sintaxis y las sutilezas del lenguaje para responder como un humano experto, no como una máquina rígida.
                     </p>
                 </div>
             </div>
 
             <div class="bg-surface border border-surfaceBorder p-8 hover:border-gray-700 transition-colors group flex flex-col justify-between min-h-[300px]">
                 <div class="flex justify-between items-start mb-12">
-                    <span class="font-mono text-xs px-3 py-1 bg-base border border-surfaceBorder rounded-full text-gray-400">3D / CINEMATICS</span>
+                    <span class="font-mono text-xs px-3 py-1 bg-base border border-surfaceBorder rounded-full text-gray-400">LATENCIA ULTRA BAJA</span>
                 </div>
                 <div>
-                    <h4 class="text-2xl font-display text-accent mb-3">Motores Gráficos</h4>
+                    <h4 class="text-xl font-display text-accent mb-3">Respuestas en Tiempo Real</h4>
                     <p class="text-gray-500 font-light text-sm leading-relaxed">
-                        Desarrollo de entornos inmersivos y mecánicas FPS. Renderizado de alta fidelidad optimizado para producción visual grado Blackmagic y diseño de videojuegos.
+                        Arquitectura optimizada para reducir los tiempos de inferencia al mínimo. Comunicación instantánea sin los tiempos de espera de los modelos tradicionales.
                     </p>
                 </div>
             </div>
 
             <div class="md:col-span-2 bg-surface border border-surfaceBorder p-8 hover:border-gray-700 transition-colors flex items-center overflow-hidden relative min-h-[300px]">
                 <div class="absolute inset-0 bg-gradient-to-r from-surface via-surface to-transparent z-10"></div>
-                <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1000&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover opacity-20 grayscale" alt="Abstract Data">
+                <img src="https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?q=80&w=1000&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover opacity-10 grayscale" alt="Neural Network Interface">
                 <div class="relative z-20 max-w-md">
-                    <h4 class="text-2xl font-display text-accent mb-3">Síntesis Sensorial</h4>
+                    <h4 class="text-2xl font-display text-accent mb-3">Interfaz Fluida y Minimalista</h4>
                     <p class="text-gray-500 font-light text-sm leading-relaxed">
-                        Experimentación en los límites de la generación. Desde interfaces visuales complejas hasta la integración de APIs de streaming musical y producción de ritmos algorítmicos.
+                        Un entorno sin distracciones. El diseño de Nebulon prioriza el contenido y la interacción, ofreciendo un lienzo oscuro y limpio donde la inteligencia conversacional es la única protagonista.
                     </p>
                 </div>
             </div>
@@ -145,17 +152,17 @@
         </div>
     </section>
 
-    <section id="contacto" class="py-24 px-6 lg:px-12 max-w-[90rem] mx-auto z-10 relative">
+    <section id="acceso" class="py-24 px-6 lg:px-12 max-w-[90rem] mx-auto z-10 relative">
         <div class="bg-surface border border-surfaceBorder p-1 md:p-12 flex flex-col md:flex-row gap-16 items-center">
             
             <div class="w-full md:w-1/2 p-8 md:p-0">
-                <h3 class="text-4xl font-display text-accent mb-6">Iniciar Secuencia</h3>
-                <p class="text-gray-500 font-light mb-8">Nuestros servidores están listos para compilar tu próxima idea. Ingresa los parámetros de tu proyecto.</p>
+                <h3 class="text-4xl font-display text-accent mb-6">Acceso Anticipado</h3>
+                <p class="text-gray-500 font-light mb-8">Nebulon está en fase de compilación por JEACEL. Ingresa tus datos en la terminal para asegurar tu lugar en la lista de espera de la Beta cerrada.</p>
                 
                 <div class="font-mono text-xs text-gray-600 space-y-2">
-                    <p>> ESTADO: <span class="text-cyanGlow">EN LÍNEA</span></p>
-                    <p>> LATENCIA: 12ms</p>
-                    <p>> PROTOCOLO: LOCAL (SIMULACIÓN)</p>
+                    <p>> ESTADO DE DESARROLLO: <span class="text-purpleGlow">COMPILANDO...</span></p>
+                    <p>> CUPOS DISPONIBLES: LIMITADOS</p>
+                    <p>> PROTOCOLO DE REGISTRO: ACTIVO</p>
                 </div>
             </div>
 
@@ -165,7 +172,7 @@
                 <div class="absolute bottom-0 left-0 w-2 h-2 border-b border-l border-gray-500"></div>
                 <div class="absolute bottom-0 right-0 w-2 h-2 border-b border-r border-gray-500"></div>
 
-                <form id="contacto-form" class="space-y-6">
+                <form id="waitlist-form" class="space-y-6">
                     <div>
                         <input type="text" required class="w-full bg-transparent border-b border-gray-800 text-accent font-mono text-sm py-3 focus:outline-none focus:border-cyanGlow transition-colors placeholder-gray-700" placeholder="IDENTIFICADOR (NOMBRE)">
                     </div>
@@ -173,10 +180,10 @@
                         <input type="email" required class="w-full bg-transparent border-b border-gray-800 text-accent font-mono text-sm py-3 focus:outline-none focus:border-cyanGlow transition-colors placeholder-gray-700" placeholder="ENLACE DE COMUNICACIÓN (EMAIL)">
                     </div>
                     <div>
-                        <textarea required rows="3" class="w-full bg-transparent border-b border-gray-800 text-accent font-mono text-sm py-3 focus:outline-none focus:border-cyanGlow transition-colors placeholder-gray-700 resize-none" placeholder="PARÁMETROS DEL PROYECTO (DESCRIPCIÓN)"></textarea>
+                        <textarea required rows="2" class="w-full bg-transparent border-b border-gray-800 text-accent font-mono text-sm py-3 focus:outline-none focus:border-cyanGlow transition-colors placeholder-gray-700 resize-none" placeholder="¿CÓMO PLANEAS USAR NEBULON?"></textarea>
                     </div>
-                    <button id="btn-ejecutar" type="submit" class="w-full bg-accent text-base font-mono text-sm py-3 uppercase tracking-wider hover:bg-cyanGlow hover:text-base transition-all font-bold">
-                        Ejecutar
+                    <button id="btn-unirse" type="submit" class="w-full bg-accent text-base font-mono text-sm py-3 uppercase tracking-wider hover:bg-cyanGlow hover:text-base transition-all font-bold">
+                        Unirse a la Lista
                     </button>
                 </form>
             </div>
@@ -185,31 +192,30 @@
     </section>
 
     <footer class="border-t border-surfaceBorder py-8 px-6 lg:px-12 max-w-[90rem] mx-auto z-10 relative flex flex-col md:flex-row justify-between items-center gap-4">
-        <p class="font-mono text-xs text-gray-600 uppercase">© 2026 JEACEL // ARCHITECTURE & AI</p>
+        <p class="font-mono text-xs text-gray-600 uppercase">© 2026 NEBULON // DESARROLLADO POR JEACEL</p>
         <div class="flex gap-6 font-mono text-xs text-gray-600 uppercase">
-            <a href="#" class="hover:text-accent transition-colors">Twitter_X</a>
-            <a href="#" class="hover:text-accent transition-colors">Github</a>
             <a href="#" class="hover:text-accent transition-colors">Sistema</a>
+            <a href="#" class="hover:text-accent transition-colors">Estado</a>
         </div>
     </footer>
 
     <script>
-        document.getElementById('contacto-form').addEventListener('submit', function(e) {
-            e.preventDefault(); // Evita que la página recargue
+        document.getElementById('waitlist-form').addEventListener('submit', function(e) {
+            e.preventDefault();
 
-            const btn = document.getElementById('btn-ejecutar');
+            const btn = document.getElementById('btn-unirse');
             const form = this;
 
             // 1. Estado de Procesamiento
             const textoOriginal = btn.innerText;
-            btn.innerText = 'PROCESANDO ENLACE...';
+            btn.innerText = 'ENCRIPTANDO DATOS...';
             btn.classList.add('opacity-50', 'cursor-not-allowed');
             btn.disabled = true;
 
-            // 2. Simular conexión al servidor (2.5 segundos)
+            // 2. Simular conexión (2.5 segundos)
             setTimeout(() => {
                 // 3. Estado de Éxito
-                btn.innerText = 'SECUENCIA COMPLETADA';
+                btn.innerText = 'REGISTRO CONFIRMADO';
                 btn.classList.replace('bg-accent', 'bg-cyanGlow');
                 btn.classList.replace('text-base', 'text-black');
                 
